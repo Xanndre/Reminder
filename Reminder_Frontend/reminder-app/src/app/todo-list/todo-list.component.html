@@ -1,0 +1,26 @@
+<mat-toolbar class="toolbar">
+  <mat-toolbar-row>
+    <span>Reminder</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button (click)="openAddTodoDialog()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<div class="container">
+<div class="row">
+  <div class="col-3 justify-content-center">
+  </div>
+  <div class="col-6 justify-content-center">
+<mat-list role="list" *ngFor="let todo of todos">
+    <app-todo-list-item
+        [todo]="todo"
+        (reloadTodosEvent)="getTodos()"
+      ></app-todo-list-item>
+  </mat-list>
+</div>
+<div class="col-3 justify-content-center">
+</div>
+</div>
+</div>
+

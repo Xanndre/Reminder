@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reminder.Core", "Reminder.Core", "{14576D8E-7813-4F21-8362-76705AD0C223}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reminder.Web", "Reminder.Web", "{07736B92-47CE-41C8-A1B9-47663F88BC6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reminder.Infrastructure", "Reminder.Infrastructure", "{F6D573AD-68B7-4B41-BDB8-6BABB114EAEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Web", "Reminder.Web\Reminder.Web.csproj", "{6933A100-3A9A-479C-97D0-E6B44EDAF89D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Core", "Reminder.Core\Reminder.Core.csproj", "{2A3FFFDE-17C7-4031-ABD1-C6789A7FB9A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder.Infrastructure.DataAccess", "Reminder.Infrastructure\Reminder.Infrastructure.DataAccess\Reminder.Infrastructure.DataAccess.csproj", "{D62C91B7-029B-45ED-A4B2-14065851EE62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6933A100-3A9A-479C-97D0-E6B44EDAF89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6933A100-3A9A-479C-97D0-E6B44EDAF89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6933A100-3A9A-479C-97D0-E6B44EDAF89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6933A100-3A9A-479C-97D0-E6B44EDAF89D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A3FFFDE-17C7-4031-ABD1-C6789A7FB9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A3FFFDE-17C7-4031-ABD1-C6789A7FB9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A3FFFDE-17C7-4031-ABD1-C6789A7FB9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A3FFFDE-17C7-4031-ABD1-C6789A7FB9A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62C91B7-029B-45ED-A4B2-14065851EE62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62C91B7-029B-45ED-A4B2-14065851EE62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62C91B7-029B-45ED-A4B2-14065851EE62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62C91B7-029B-45ED-A4B2-14065851EE62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6933A100-3A9A-479C-97D0-E6B44EDAF89D} = {07736B92-47CE-41C8-A1B9-47663F88BC6C}
+		{2A3FFFDE-17C7-4031-ABD1-C6789A7FB9A7} = {14576D8E-7813-4F21-8362-76705AD0C223}
+		{D62C91B7-029B-45ED-A4B2-14065851EE62} = {F6D573AD-68B7-4B41-BDB8-6BABB114EAEC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4813B256-E4F1-4F1E-AA23-611B02A3495C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+.toolbar {
+  background-color: rgb(0, 191, 255);
+  color: white;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+mat-list:last-child {
+  margin-bottom: 10px;
+}

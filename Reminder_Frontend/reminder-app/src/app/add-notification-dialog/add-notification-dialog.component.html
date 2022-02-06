@@ -1,0 +1,29 @@
+<h1 mat-dialog-title class="title">Hi!</h1>
+<div mat-dialog-content class="details">
+  <p>{{paragraphText}}</p>
+  <form #myForm="ngForm">
+  <mat-form-field appearance="fill">
+    <mat-label>Date</mat-label>
+    <input matInput [matDatepicker]="pickerDate" [(ngModel)]="date" [min]="todayDate" [max]="data.todo.date" name="date"
+    required>
+    <mat-datepicker-toggle matSuffix [for]="pickerDate"></mat-datepicker-toggle>
+    <mat-datepicker #pickerDate ></mat-datepicker>
+  </mat-form-field>
+
+ <mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Time</mat-label>
+  <input matInput [ngxTimepicker]="picker" [(ngModel)]="time" name="time" required>
+<ngx-material-timepicker #picker ></ngx-material-timepicker>
+</mat-form-field>
+
+     <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" [(ngModel)]="email" name="email"
+        type="email" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+      </mat-form-field>
+
+<div mat-dialog-actions class="justify-content-end">
+  <button mat-raised-button color="primary" (click)="closeDialog()">Exit</button>
+  <button mat-raised-button color="primary" (click)="addNotification()" [disabled]="!myForm.form.valid" type="submit">{{buttonText}}</button>
+</div>
+</form>
